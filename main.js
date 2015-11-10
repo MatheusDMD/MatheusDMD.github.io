@@ -1,7 +1,11 @@
 $(document).ready(function() {
-  $("#hover_here").hover(function() {
-  
+  $("#name").hover(function() {
+    $("#name").css({
+      "color": "red"
+    });
   }, function() {
-      // mouseleave code goes here
+    $("#name").css({
+      "color": "black"
+    });
   });
 });
