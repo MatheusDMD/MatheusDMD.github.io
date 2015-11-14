@@ -1,5 +1,20 @@
 container {background-color: #F8F8F8; }
 
-#Timg1 {style="width:500px;height:300px;"}
 
-#Timg2 {style="width:500px;height:300px;"}
+html, body{
+    margin:0;
+    padding:0;
+}
+
+.window{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+@for $i from 1 through 6{
+    .window:nth-child(#{$i}){
+        background:nth($colors, $i);
+        top:($i - 1) * 100%;
+    }
+}
