@@ -3,6 +3,9 @@
   <head>
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="simple-sidebar.css">
+
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
@@ -15,6 +18,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
+    <script>
+      // init controller
+      var controller = new ScrollMagic.Controller();
+    </script>
   </head>
   <body>
     <div id="wrapper">
@@ -72,6 +80,21 @@
                 </div>
               </div>
             </div>
+            <div class="spacer s2"></div>
+              <div id="trigger1" class="spacer s0"></div>
+                <div id="animate1" class="box2 skin">
+                  <p>You wouldn't like me, when I'm angry!</p>
+            </div>
+            <div class="spacer s2"></div>
+              <script>
+                  // build scene
+                  var scene = new ScrollMagic.Scene({
+                            triggerElement: "#trigger1"
+                          })
+                          .setTween("#animate1", 0.5, {backgroundColor: "blue", scale: 2.5}) // trigger a TweenMax.to tween
+                          .addTo(controller);
+              </script>
+            </div>
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <img id="Timg1" src="https://rebootinggov.files.wordpress.com/2013/04/photo-26.jpg" alt="data-science">
@@ -84,7 +107,6 @@
             </div>
           </div>
       </div>
-    </div>
   </div>
 </div>
         <!-- /#page-content-wrapper -->
