@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("#name").hover(function() {
     $("#name").css({
       "color": "red"
-      "font-size": "20"
+      "font-size": "larger"
     });
   }, function() {
     $("#name").css({
