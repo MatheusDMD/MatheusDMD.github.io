@@ -309,7 +309,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(1) {
-  background: #d5d7dd url("http://www.psdgraphics.com/file/abstract-mosaic-background.png");
+  background: #d5d7dd url("http://www.psdgraphics.com/file/abstract-mosaic-background.png")0px 0px/100%;
   top: 0%;
 }
 
