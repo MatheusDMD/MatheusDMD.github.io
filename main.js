@@ -12,10 +12,10 @@ $(document).ready(function() {
 
 $(document).ready(function () {
     $("#3").mouseover(function () {
-        $(".grayscaleDS").removeClass().fadeTo(400,0.8).addClass("grayscaleDSbw").fadeTo(400, 1);
+        $(".grayscaleDSbw").removeClass().fadeTo(400,0.8).addClass("grayscaleDS").fadeTo(400, 1);
     });
     $("#3").mouseout(function () {
-        $(".grayscaleDSbw").removeClass().fadeTo(400, 0.8).addClass("grayscaleDS").fadeTo(400, 1);
+        $(".grayscaleDS").removeClass().fadeTo(400, 0.8).addClass("grayscaleDSbw").fadeTo(400, 1);
     });
 
 
