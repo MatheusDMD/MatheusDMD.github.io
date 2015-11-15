@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("#name").hover(function() {
     $("#name").css({
-      "color": "red"
+      "color": "black"
     });
   }, function() {
     $("#name").css({
-      "color": "black"
+      "color": "orange"
     });
   });
 });

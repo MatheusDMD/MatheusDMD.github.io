@@ -8,7 +8,7 @@ html, body{
 
 #name{
 	font-family: 'Doppio One', sans-serif;
-	color: #FFF0F5
+	color: #FFA500
 }
 
 .window{
@@ -320,7 +320,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
-  background: #1babb7;
+  background: #FFA500;
   top: 100%;
 }
 
