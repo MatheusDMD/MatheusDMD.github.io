@@ -17,7 +17,7 @@ html, body{
   font-size: 4.5em;
 }
 
-@for $i from 1 through 6{
+@for $i from 1 through 10{
     .window:nth-child(#{$i}){
         background:nth($colors, $i);
         top:($i - 1) * 100%;
@@ -149,25 +149,44 @@ pre {
   color: #FFA500;
   font-size: 4.5em;
 }
+.window:nth-child(5) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 4.5em;
+}
+
+.window:nth-child(6) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 4.5em;
+}
+
+.window:nth-child(7) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 4.5em;
+}
+
+.window:nth-child(8) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 4.5em;
+}
+
 
 /* line 102, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) .content {
+.window:nth-child(9) .content {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -350px 0 0 -450px;
 }
-/* line 108, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) h1 {
-  color: #333a3e;
-}
-/* line 111, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) pre {
-  color: #333a3e;
-}
-
 /* line 119, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(6) .content {
+.window:nth-child(10) .content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -328,19 +347,43 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(4) {
-  background: #333a3e url("https://c1.staticflickr.com/9/8398/8667743577_01f749912b_b.jpg")0px 0px/100% no-repeat fixed;
+  background: #333a3e url("https://pixabay.com/static/uploads/photo/2015/02/24/02/05/website-647013_640.jpg")0px 0px/100% no-repeat fixed;
   top: 215%;
   height: 15%;
 }
+.window:nth-child(5) {
+  background: #333a3e url("https://farm3.staticflickr.com/2326/2046228644_daab5255bd_o_d.jpg")0px 0px/100% no-repeat fixed;
+  top: 230%;
+  height: 15%;
+}
+
+.window:nth-child(6) {
+  background: #333a3e url("https://c1.staticflickr.com/9/8398/8667743577_01f749912b_b.jpg")0px 0px/100% no-repeat fixed;
+  top: 245%;
+  height: 15%;
+}
+
+.window:nth-child(7) {
+  background: #333a3e url("https://www.jisc.ac.uk/sites/default/files/meeting.jpg")0px 0px/100% no-repeat fixed;
+  top: 260%;
+  height: 15%;
+}
+
+.window:nth-child(8) {
+  background: #333a3e url("http://www.andreadicastro.com/academia/electronica/proto/_DSC0232.jpg")0px 0px/100% no-repeat fixed;
+  top: 275%;
+  height: 15%;
+}
+
 
 /* line 18, ../scss/main.scss */
-.window:nth-child(5) {
+.window:nth-child(9) {
   background: #d0482b;
-  top: 230%;
+  top: 300%;
 }
 
 /* line 18, ../scss/main.scss */
-.window:nth-child(6) {
+.window:nth-child(10) {
   background: #231f20;
-  top: 430%%;
+  top: 400%%;
 }
