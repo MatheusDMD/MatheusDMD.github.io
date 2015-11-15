@@ -104,9 +104,10 @@ pre {
 .window:nth-child(2) .content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   margin-top: -180px;
   margin-left: -160px;
+  margin-right: 200px;
 }
 /* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(2) .content h2 {
@@ -320,7 +321,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
-  background: #FFA500;
+  background: #FFA500 url("http://a1.files.readwrite.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTI0NzkyMTI1Mzc5MzU0Njk2.jpg")0px 0px/120% fixed;
   top: 100%;
 }
 
