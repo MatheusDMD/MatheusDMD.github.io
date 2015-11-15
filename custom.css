@@ -12,7 +12,6 @@ html, body{
 @for $i from 1 through 6{
     .window:nth-child(#{$i}){
         background:nth($colors, $i);
-        top:($i - 1) * 100%;
     }
 }
 
@@ -320,25 +319,21 @@ html, body {
 /* line 18, ../scss/main.scss */
 .window:nth-child(3) {
   background: #333a3e url("http://a1.files.readwrite.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTI0NzkyMTI1Mzc5MzU0Njk2.jpg")0px 0px/120% no-repeat fixed;
-  top: 200%;
   height: 10%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(4) {
   background: #333a3e;
-  top: 210%;
   height: 10%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(5) {
   background: #d0482b;
-  top: 400%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(6) {
   background: #231f20;
-  top: 500%;
 }
