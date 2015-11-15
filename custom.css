@@ -5,7 +5,7 @@ html, body{
 }
 
 #name{
-	font-family: 'Doppio One', sans-serif;
+	font-family: 'Alegreya SC', serif;
 	color: #FFA500
 }
 
@@ -90,6 +90,7 @@ pre {
 /* line 41, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(1) .content h2 {
   padding: 0 30px;
+  font-family: 'Doppio One', sans-serif;
 }
 
 /* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
@@ -118,13 +119,13 @@ pre {
 /* line 68, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(3) .content {
   position: absolute;
-  top: 50%;
   width: 100%;
-  margin-top: -230px;
 }
 /* line 73, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(3) .content h2 {
-  text-align: center;
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
   font-size: 3.0em;
 }
 /* line 77, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
@@ -141,11 +142,11 @@ pre {
 }
 
 /* line 92, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(4) pre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -220px 0 0 -450px;
+.window:nth-child(4) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 3.0em;
 }
 
 /* line 102, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
@@ -326,7 +327,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(4) {
-  background: #333a3eurl("https://c1.staticflickr.com/9/8398/8667743577_01f749912b_b.jpg")0px 0px/100% no-repeat fixed;
+  background: #333a3e url("https://c1.staticflickr.com/9/8398/8667743577_01f749912b_b.jpg")0px 0px/100% no-repeat fixed;
   top: 215%;
   height: 15%;
 }
