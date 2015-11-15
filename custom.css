@@ -19,7 +19,7 @@ html, body{
 #projects{
   text-align: left;
   font-family: 'Doppio One', sans-serif;
-  color: #d0482b;
+  color: #3385ff;
   font-size: 4.5em;
 }
 
@@ -397,7 +397,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(10) {
-  background: #d0482b;
+  background: #3385ff;
   top: 300%;
 }
 
