@@ -19,7 +19,7 @@ html, body{
 #projects{
   text-align: left;
   font-family: 'Doppio One', sans-serif;
-  color: #3385ff;
+  color: #666666;
   font-size: 4.5em;
 }
 
@@ -134,6 +134,7 @@ pre {
 .window:nth-child(3) .content {
   position: absolute;
   width: 100%;
+  background: #3385ff;
 }
 /* line 77, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(3) .content .explanation {
