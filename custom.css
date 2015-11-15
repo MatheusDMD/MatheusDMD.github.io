@@ -5,7 +5,7 @@ html, body{
 
 #name{
 	font-family: 'Alegreya SC', serif;
-	font-size: 70px;
+	font-size: 60px;
 	color: #FFA500;
 }
 
@@ -24,10 +24,12 @@ html, body{
 }
 
 .circular {
-	width: 300px;
-	height: 300px;
+	width: 230px;
+	height: 230px;
 	border-radius: 150px;
-	background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12227721_1214129625280948_6158322360424619851_n.jpg?oh=f9d96dcb280b65588cf30c7a7bce05d9&oe=56BE0652&__gda__=1454484852_0b11947a7a1f0ed7cba7b834ae828bc0") no-repeat;
+	margin-left: auto;
+    margin-right: auto;
+	background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12227721_1214129625280948_6158322360424619851_n.jpg?oh=f9d96dcb280b65588cf30c7a7bce05d9&oe=56BE0652&__gda__=1454484852_0b11947a7a1f0ed7cba7b834ae828bc0")0px/100% no-repeat;
 	}
 
 @for $i from 1 through 10{
@@ -129,9 +131,6 @@ pre {
   text-align: left;
 }
 
-.window:nth-child(2) .content h3 {
-  font-size: 30pt;
-}
 /* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(2) .content h2 .highlight {
   color: white;
