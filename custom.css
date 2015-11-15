@@ -6,6 +6,11 @@ html, body{
     padding:0;
 }
 
+#name{
+	font-family: 'Doppio One', sans-serif;
+	color: #FFF0F5
+}
+
 .window{
     width:100%;
     height:100%;
