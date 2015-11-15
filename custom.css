@@ -27,7 +27,7 @@ html, body{
 	width: 300px;
 	height: 300px;
 	border-radius: 150px;
-	background: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/0b6/17c/057fa76.jpg") no-repeat;
+	background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12227721_1214129625280948_6158322360424619851_n.jpg?oh=f9d96dcb280b65588cf30c7a7bce05d9&oe=56BE0652&__gda__=1454484852_0b11947a7a1f0ed7cba7b834ae828bc0") no-repeat;
 	}
 
 @for $i from 1 through 10{
