@@ -29,6 +29,7 @@ html, body{
 	border-radius: 150px;
 	margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12227721_1214129625280948_6158322360424619851_n.jpg?oh=f9d96dcb280b65588cf30c7a7bce05d9&oe=56BE0652&__gda__=1454484852_0b11947a7a1f0ed7cba7b834ae828bc0")0px/100% no-repeat;
 	}
 
