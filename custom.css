@@ -6,7 +6,15 @@ html, body{
 
 #name{
 	font-family: 'Alegreya SC', serif;
-	color: #FFA500
+	font-size: 70px;
+	color: #FFA500;
+}
+
+#DS{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: #FFA500;
+  font-size: 4.5em;
 }
 
 @for $i from 1 through 6{
@@ -121,13 +129,6 @@ pre {
   position: absolute;
   width: 100%;
 }
-/* line 73, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) .content h2 {
-  text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: #FFA500;
-  font-size: 3.0em;
-}
 /* line 77, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(3) .content .explanation {
   font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
@@ -146,7 +147,7 @@ pre {
   text-align: left;
   font-family: 'Doppio One', sans-serif;
   color: #FFA500;
-  font-size: 3.0em;
+  font-size: 4.5em;
 }
 
 /* line 102, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
