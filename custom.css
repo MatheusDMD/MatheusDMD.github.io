@@ -128,6 +128,10 @@ pre {
   color: #d5d7dd;
   text-align: left;
 }
+
+.window:nth-child(2) .content h3 {
+  font-size: 30pt;
+}
 /* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(2) .content h2 .highlight {
   color: white;
