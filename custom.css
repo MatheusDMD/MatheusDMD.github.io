@@ -321,13 +321,13 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
-  background: #FFA500 url("http://a1.files.readwrite.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTI0NzkyMTI1Mzc5MzU0Njk2.jpg")0px 0px/120% fixed;
+  background: #FFA500;
   top: 100%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(3) {
-  background: #6ab29f;
+  background: #6ab29f url("http://a1.files.readwrite.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTI0NzkyMTI1Mzc5MzU0Njk2.jpg")0px 0px/120% fixed;
   top: 200%;
 }
 
