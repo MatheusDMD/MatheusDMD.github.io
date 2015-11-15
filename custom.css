@@ -1,3 +1,38 @@
+.adipoli-wrapper
+{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img
+{
+    position: absolute;
+    z-index: 1;
+}
+.adipoli-before
+{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after
+{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+}
+.adipoli-box
+{
+    display:block;
+    position:absolute;
+    z-index:15;
+}
+
+/*------  ^ Adipoli ^  ------*/
 
 html, body{
     margin:0;
@@ -347,7 +382,7 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(4) {
-  background: #333a3e url("https://pixabay.com/static/uploads/photo/2015/02/24/02/05/website-647013_640.jpg")0px 0px/100% no-repeat fixed;
+  background: #333a3e url("https://pixabay.com/static/uploads/photo/2015/04/20/13/17/work-731198_640.jpg")0px 0px/100% no-repeat fixed;
   top: 215%;
   height: 15%;
 }
@@ -379,11 +414,11 @@ html, body {
 /* line 18, ../scss/main.scss */
 .window:nth-child(9) {
   background: #d0482b;
-  top: 300%;
+  top: 290%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(10) {
   background: #231f20;
-  top: 400%%;
+  top: 390%%;
 }

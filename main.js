@@ -10,6 +10,11 @@ $(document).ready(function() {
   });
 });
 
+$('#image1').adipoli({
+    'startEffect' : 'grayscale',
+    'hoverEffect' : 'normal'
+});
+
 $(document).ready(function(){
 
     $('.window').windows({
