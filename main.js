@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 });
 
-$('#image1').adipoli({
+$('#4').adipoli({
     'startEffect' : 'grayscale',
     'hoverEffect' : 'normal'
 });
