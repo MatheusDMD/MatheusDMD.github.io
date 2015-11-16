@@ -2,16 +2,16 @@ $(document).ready(function() {
   $("#name").hover(function() {
     $("#name").css({
       "color": "black"
-    }).fadeTo(400,0.8).function() {
+    });
+  }, function() {
     $("#name").css({
       "color": "orange"
-     }
     });
   });
 });
 
 $(document).ready(function () {
-    $("#3c").mouseover(function () {
+    $("#3c").hover(function () {
         $(".grayscaleDSbw").removeClass().fadeTo(400,0.8).addClass("grayscaleDS").fadeTo(400, 1);
     });
     $("#3c").mouseout(function () {
