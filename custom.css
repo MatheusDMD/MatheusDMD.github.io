@@ -12,7 +12,7 @@ html, body{
 #DS{
   text-align: left;
   font-family: 'Doppio One', sans-serif;
-  color: #FFA500;
+  color: white;
   font-size: 4.5em;
 }
 
@@ -207,9 +207,17 @@ pre {
 .window:nth-child(10) .content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin: -350px 0 0 -450px;
+  left: 20%;
+  width: 100%;
 }
+
+.window:nth-child(10) .content h2{
+  text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: white;
+  font-size: 4.5em;
+}
+
 /* line 119, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
 .window:nth-child(11) .content {
   position: absolute;
