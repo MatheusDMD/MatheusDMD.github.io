@@ -2,19 +2,19 @@ $(document).ready(function() {
   $("#name").hover(function() {
     $("#name").css({
       "color": "black"
-    });
-  }, function() {
+    }).fadeTo(400,0.8).function() {
     $("#name").css({
       "color": "orange"
+     }
     });
   });
 });
 
 $(document).ready(function () {
-    $("#3").mouseover(function () {
+    $("#3c").mouseover(function () {
         $(".grayscaleDSbw").removeClass().fadeTo(400,0.8).addClass("grayscaleDS").fadeTo(400, 1);
     });
-    $("#3").mouseout(function () {
+    $("#3c").mouseout(function () {
         $(".grayscaleDS").removeClass().fadeTo(400, 0.8).addClass("grayscaleDSbw").fadeTo(400, 1);
     });
 
