@@ -217,6 +217,29 @@ pre {
   font-size: 4.5em;
 }
 /* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(6) .content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-top: -180px;
+  margin-left: -160px;
+  margin-right: 200px;
+}
+/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(6) .content h2 {
+    text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: white;
+  font-size: 4.5em;s
+}
+
+/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(6) .content h2 .highlight {
+    text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: white;
+  font-size: 4.5em;
+}
 .window:nth-child(7) .content {
   position: absolute;
   top: 50%;
@@ -240,6 +263,32 @@ pre {
   color: white;
   font-size: 4.5em;
 }
+
+.window:nth-child(8) .content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-top: -180px;
+  margin-left: -160px;
+  margin-right: 200px;
+}
+/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(8) .content h2 {
+    text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: white;
+  font-size: 4.5em;
+}
+
+/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
+.window:nth-child(8) .content h2 .highlight {
+    text-align: left;
+  font-family: 'Doppio One', sans-serif;
+  color: white;
+  font-size: 4.5em;
+}
+
+
 
 /* CSS Document */
 /* line 4, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
@@ -408,5 +457,9 @@ html, body {
 }
 .window:nth-child(7) {
   background: #cc0000;
+  top: 500%;
+}
+.window:nth-child(8) {
+  background: #ffffff;
   top: 500%;
 }
