@@ -30,7 +30,7 @@ html, body{
 	margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	background: url("https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xtp1/v/t1.0-9/12227721_1214129625280948_6158322360424619851_n.jpg?oh=f9d96dcb280b65588cf30c7a7bce05d9&oe=56BE0652&__gda__=1454484852_0b11947a7a1f0ed7cba7b834ae828bc0")0px/100% no-repeat;
+	background: url("/images/profile.jpg")0/100%;
 	}
 
 
@@ -167,128 +167,6 @@ pre {
   color: white;
   font-size: 4.5em;
 }
-/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(4) .content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  margin-top: -180px;
-  margin-left: -160px;
-  margin-right: 200px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(4) .content h2 {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;s
-}
-
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(4) .content h2 .highlight {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-
-/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) .content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  margin-top: -180px;
-  margin-left: -160px;
-  margin-right: 200px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) .content h2 {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;s
-}
-
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) .content h2 .highlight {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(6) .content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  margin-top: -180px;
-  margin-left: -160px;
-  margin-right: 200px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(6) .content h2 {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;s
-}
-
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(6) .content h2 .highlight {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-.window:nth-child(7) .content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  margin-top: -180px;
-  margin-left: -160px;
-  margin-right: 200px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(7) .content h2 {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;s
-}
-
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(7) .content h2 .highlight {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-
-.window:nth-child(8) .content {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  margin-top: -180px;
-  margin-left: -160px;
-  margin-right: 200px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(8) .content h2 {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(8) .content h2 .highlight {
-    text-align: left;
-  font-family: 'Doppio One', sans-serif;
-  color: white;
-  font-size: 4.5em;
-}
-
-
 
 /* CSS Document */
 /* line 4, /Users/Jonas/Projects/repo/windows/scss/demo/_btn.scss */
@@ -430,36 +308,13 @@ html, body {
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
-  background: #ffffff;
+  background: #cc0000;
   top: 100%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(3) {
-  background: #cc0000;
+  background: #ffffff;
   top: 200%;
 }
 
-/* line 18, ../scss/main.scss */
-.window:nth-child(4) {
-  background: #ffffff;
-  top: 300%;
-}
-
-/* line 18, ../scss/main.scss */
-.window:nth-child(5) {
-  background: #cc0000;
-  top: 400%;
-}
-.window:nth-child(6) {
-  background: #ffffff;
-  top: 500%;
-}
-.window:nth-child(7) {
-  background: #cc0000;
-  top: 500%;
-}
-.window:nth-child(8) {
-  background: #ffffff;
-  top: 500%;
-}
