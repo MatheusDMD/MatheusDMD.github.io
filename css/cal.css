@@ -31,28 +31,13 @@ nav {
     width: 90%;
 }
 
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  text-align: center;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-}
-
 .menuitem {
     padding: 1rem;
 }
 
 main {
     padding: 4rem 1rem 5rem 1rem;
+    text-align: center
 }
 
 figure {
@@ -64,31 +49,26 @@ figure {
     float: left;
     width: 33%;
     text-align: center;
-    padding: 1rem 0rem;
+    padding: 1rem 1rem;
 }
 
-.selected {
-    background: linear-gradient(#000077, #0000FF);
-}
-
-footer {
-          position: fixed;
-          bottom: 0
-      
-
-
-}
 .baritem img {
     width: 2rem;
     height: 2rem;
 }
 
-.camerazinha {
-  width: 2rem;
-  height: 2rem;
+.calendario  {
+    width: 80%;
+    height: 60%;
 }
 
-.iconesprincipais {
-  width: 5rem;
-  height: 5rem;
+select {
+    border-width: 5px;
+    border-color: #62AD09;
+    height: 2rem;
+    width: 6rem;
+}
+.splash {
+    height: 30rem;
+    width: 20rem;
 }
