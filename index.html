@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 
 <head>
+	 <!--BOOTSTRAP-->
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<style>
@@ -10,7 +20,7 @@
 	* --------------------------------------- */
 	h1{
 		font-size: 5em;
-		font-family: arial,helvetica;
+		font-family: 'Josefin Sans', sans-serif;
 		color: #fff;
 		margin:0;
 		padding:0;
@@ -23,22 +33,24 @@
 
 	/* Centered texts in each section
 	* --------------------------------------- */
+	#section0{
+		text-align:center;
+		align-content: center;
+	}
 	.section{
 		text-align:center;
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 
 	/* Fixed header and footer.
 	* --------------------------------------- */
 	#header, #footer{
 		position:fixed;
-		height: 50px;
-		display:block;
 		width: 100%;
 		background: #333;
 		z-index:9;
-		text-align:left; 
-		color: #f2f2f2;
-		padding: 20px 0 0 20px;
+		height: 5em;
 	}
 
 	#header{
@@ -55,7 +67,7 @@
 	}
 
 	.fp-slidesNav.bottom{
-		bottom: 75px;
+		bottom: 5em;
 	}
 
 	#section0{
@@ -72,6 +84,7 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
+	<link rel="stylesheet" href="css/style.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -79,6 +92,8 @@
 
 	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
 
+  	<script type='text/javascript' src='jquery.particleground.js'></script>
+  	<script type='text/javascript' src='demo.js'></script>
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
 	<script type="text/javascript" src="typed.js"></script>
@@ -93,15 +108,15 @@
 
 			  $(function(){
 			      $("#Matheus").typed({
-			        strings: ["Ola! sou Matheus!","Matheus Marotzke."],
+			        strings: ["Matheus Marotzke"],
 			        typeSpeed: 100
 			      });
 			      var delay=6200; //6,2 second
 
 					setTimeout(function() {
 		  			      $("#sub").typed({
-			        		strings: ["Contar sobre mim?", "Bom...","Sou fanatico por tecnologia!", "Completamente apaixonado por aprender!","Eu curso:","Engenharia da Computacao - Insper\n(Turma dos Pioneiros)"],
-			       		 	typeSpeed: 10
+			        		strings: ["Contar sobre mim?", "Bom...","Sou fanático por tecnologia!", "Completamente apaixonado por aprender!","Eu curso:","Engenharia da Computação - Insper\n(Turma dos Pioneiros)"],
+			       		 	typeSpeed: 1
 			      			});
 					}, delay);
 			  });
@@ -112,25 +127,48 @@
 
 </head>
 <body>
-
+<!--
 <div id="header">
-	<a href="https://github.com/MatheusDMD" style="align:left">
-		<img src="images/github.png" alt="GitHub" style="width:40px;height:40px;border:0;align:left">
+	<a target="_blank" href="https://github.com/MatheusDMD" style="align:left">
+		<img src="images/github.png" alt="GitHub" style="width:2.5em;height:2.5em;border:0;align:left">
 	</a>
 
-	<a href="https://br.linkedin.com/in/matheusdmd" style="align:left">
-		<img src="images/linkedin.png" alt="LinkedIn" style="width:40px;height:40px;border:0;align:left">
+	<a target="_blank" href="https://br.linkedin.com/in/matheusdmd" style="align:left">
+		<img src="images/linkedin.png" alt="LinkedIn" style="width:2.5em;height:2.5em;border:0;align:left">
 	</a>
 
-	<!--<div class="element" style="align:left"></div>
-	-->
+	<div class="element" style="align:left"></div>
+	
+</div>
+-->	
+<div id="header">
+	 <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" style="font-family: 'Josefin Sans', sans-serif" href="#firstPage">Matheus Marotzke</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#secondPage/slide1">Projetos</a></li>
+	      <li><a href="#secondPage/slide2">FabLab</a></li>
+	      <li><a href="#secondPage/slide3">NINJA</a></li>
+	      <li><a href="#secondPage/slide4">MundoMaker</a></li>
+	      <li><a href="#secondPage/slide5">Hackathon</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a target="_blank" href="https://github.com/MatheusDMD"><img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"> GitHub</a></li>
+	      <li><a target="_blank" href="https://br.linkedin.com/in/matheusdmd"><img src="images/linkedin.png" alt="LinkedIn" style="width:2em;height:2em;border:0;align:left"> LinkedIn</a></li>
+	    </ul>
+	  </div>
+	</nav>
 </div>
 
 <div id="fullpage">
 	<div class="section" id="section0">
-		<div class="circular"></div>
-		<h1 id="Matheus"> </h1>
-		<p id="sub"></p>
+		<div id="particles">
+			<div class="circular"></div>
+			<h1 id="Matheus"> </h1>
+			<p id="sub"></p>
+		</div>
 	</div>
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1" data-anchor="slide1">
