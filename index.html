@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<style>
-
+	
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
@@ -34,11 +34,11 @@
 	/* Centered texts in each section
 	* --------------------------------------- */
 	#section0{
-		text-align:center;
+		text-align:justify;
 		align-content: center;
 	}
 	.section{
-		text-align:center;
+		text-align:justify;
 		padding-right: 5%;
 		padding-left: 5%;
 	}
@@ -77,6 +77,26 @@
 	.element{
 		font-size: 1em;
 	}
+
+	div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+	width: 200px;
+	}
+
+	div.gallery:hover {
+		border: 1px solid #777;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+
+	div.desc {
+		padding: 10px;
+		text-align: center;
+	}
 	</style>
 
 	<!--[if IE]>
@@ -100,9 +120,13 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				anchors: ['me', 'projects', 'awards', 'student'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#1BBC9B'],
 				slidesNavigation: true,
+				navigation:true,
+				responsiveWidth:1010,
+				navigationPosition:"right",
+				navigationTooltips:["Me", "Projects", "Awards & Recognition", "Student Life"],
 				css3: true
 			});
 
@@ -115,7 +139,7 @@
 
 					setTimeout(function() {
 		  			      $("#sub").typed({
-			        		strings: ["Contar sobre mim?", "Bom...","Sou fanático por tecnologia!", "Completamente apaixonado por aprender!","Eu curso:","Engenharia da Computação - Insper\n(Turma dos Pioneiros)"],
+			        		strings: ["Computer Engineering Student"],
 			       		 	typeSpeed: 1
 			      			});
 					}, delay);
@@ -146,14 +170,13 @@
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <a class="navbar-brand" style="font-family: 'Josefin Sans', sans-serif" href="#firstPage">Matheus Marotzke</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#secondPage/slide1">Projetos</a></li>
-	      <li><a href="#secondPage/slide2">FabLab</a></li>
-	      <li><a href="#secondPage/slide3">NINJA</a></li>
-	      <li><a href="#secondPage/slide4">MundoMaker</a></li>
-	      <li><a href="#secondPage/slide5">Hackathon</a></li>
-	    </ul>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#me/slide1">Matheus</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#awards">Awards</a></li>
+			<li><a href="#student">Student Life</a></li>
+		  </ul>  
 	    <ul class="nav navbar-nav navbar-right">
 	      <li><a target="_blank" href="https://github.com/MatheusDMD"><img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"> GitHub</a></li>
 	      <li><a target="_blank" href="https://br.linkedin.com/in/matheusdmd"><img src="images/linkedin.png" alt="LinkedIn" style="width:2em;height:2em;border:0;align:left"> LinkedIn</a></li>
@@ -163,64 +186,347 @@
 </div>
 
 <div id="fullpage">
-	<div class="section" id="section0">
+	<div class="section" style="text-align:center" id="section0">
 		<div id="particles">
 			<div class="circular"></div>
 			<h1 id="Matheus"> </h1>
-			<p id="sub"></p>
+			<p style="color:white">Computer Engineering Student</p>
 		</div>
 	</div>
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1" data-anchor="slide1">
-			<h1 id="Projetos">Projetos</h1>
+			<h1 id="Projetos">Relevant Projects</h1>
 			<p>
-				Essa divisão contará um pouco mais sobre projetos nos quais já trabalhei e me envolvi!
+				A collection of relevant project I've worked on
 			</p>
+			<div>
+				<p style="float:left;margin:5px;color:rgb(61, 139, 255)">Platforms and Solutions:</p>
+				<a style="float:left;margin:5px;color:rgb(61, 139, 255)" href="#projects/TMA"><button type="button" class="btn btn-outline-primary">Twitter Marketing Analytics</button></a>
+				<a style="float:left;margin:5px;color:rgb(61, 139, 255)" href="#projects/AWS"><button type="button" class="btn btn-outline-primary">AWS-Automate-Kubernetes-Deploy</button></a>
+				<a style="float:left;margin:5px;color:rgb(61, 139, 255)" href="#projects/Amazonia"><button type="button" class="btn btn-outline-primary">Amazonia - Native Brazilian Marketplace</button></a>
+				<a style="float:left;margin:5px;color:rgb(61, 139, 255)" href="#projects/Sky-TV"><button type="button" class="btn btn-outline-primary">Sky-TV - Consulting Project</button></a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div>
+				<p style="float:left;margin:5px;color:rgb(238, 146, 8)">Tech Exploring:</p>
+				<a style="float:left;margin:5px;color:rgb(238, 146, 8)" href="#projects/MIPS"><button type="button" class="btn btn-outline-primary">MIPS - Hardware Design</button></a>
+				<a style="float:left;margin:5px;color:rgb(238, 146, 8)" href="#projects/ScaryVR"><button type="button" class="btn btn-outline-primary">ScaryVR _ Virtual Reality</button></a>
+				<a style="float:left;margin:5px;color:rgb(238, 146, 8)" href="#projects/Neato"><button type="button" class="btn btn-outline-primary">Neato Hacked - Robotics</button></a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div>
+				<p style="float:left;margin:5px;color:green">Mobile Development:</p>
+				<a style="float:left;margin:5px;color:green" href="#projects/Morse"><button type="button" class="btn btn-outline-primary">Morse Code App</button></a>
+				<a style="float:left;margin:5px;color:green" href="#projects/Endor"><button type="button" class="btn btn-outline-primary">Endor - Sports Social Network</button></a>
+				<a style="float:left;margin:5px;color:green" href="#projects/MotorcyclistSafety"><button type="button" class="btn btn-outline-primary">Motorcyclist Safety App</button></a>
+			</div>
 		</div>
 
-		<div class="slide" id="slide2" data-anchor="slide2">
-			<h1>FabLab</h1>
+		<div class="slide" id="slide2" data-anchor="TMA">
+			<h1>Twitter Marketing Analytics</h1>
+			<p style="color:white">Get real-time social media consumer behaviour reactions on your Dashboard</p>
+			<br>
 			<p>
-			O FabLab é um espaço de criatividade, criação e compartilhamento de projetos e ideais. Essa rede mundial tem um espaço associado no Insper, aberto ao público às quartas-feiras, o FabLab do Insper conta com um time incrível de profissionais que auxiliam com visitantes, mas principalmente os alunos nos projetos de disciplinas.
-			Tive a oportunidade de fazer parte de um time de alunos que também auxiliavam no FabLab. Sem um nome legal para nos inspirar, tivemos que inventar nosso próprio, éramos os P
+				The goal of this is project is to provide a tool to better understand user reaction to marketing campaigns or even popularity of specific topic. Designed for Marketing Companies and Companies’ Marketing Areas, this project has a dashboard that allows its users to monitor natural language interpreted sentiment from Tweets in real-time to better understand behavior and get insights for future campaigns.
 			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/twitter.jpeg">
+						<img src="images/twitter.jpeg" alt="Screenshot" width="300" height="200">
+						</a>
+						<div class="desc"> Dashboard Screenshot</div>
+					</div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/Model.jpeg">
+						<img src="images/Model.jpeg" alt="Solution Diagram" width="300" height="200">
+						</a>
+						<div class="desc">Solution Diagram</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://matheusdmd.github.io/MarketingAnalyticsTwitter/"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
 		</div>
 
-		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>"Need Information Now Just Ask"</h1>
+		<div class="slide" id="slide3" data-anchor="AWS">
+			<h1>AWS-Automate-Kubernetes-Deploy</h1>
+			<p style="color:white">Put your solutions online and scale it up with a couple of clicks</p>
+			<br>
 			<p>
-				NINJA
+				This project was designed with the goal of making image deploying simple. It works by using kubernetes on AWS instances, putting the project online with the Kops tool. With a couple of commands and 10 minutes you can get a Docker Image online. 
 			</p>
-			<p>
-				Sigla vinda de Olin, representa uma posição que engloba mais do que um monitor de sala e assistente de professor. Ninja é o aluno que tem, além do conhecimento técnico da disciplina, a vontade de ajudar seus colegas e parceiros.
-				Pude ser parte de um time sensacional de Ninjas, ajudando a segunda turma de alunos de engenharia na disciplina de Design de Software.
-			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/solution_diagram.jpg">
+						<img src="images/solution_diagram.jpg" alt="Solution Diagram" width="300" height="200">
+						</a>
+						<div class="desc">Solution Diagram</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://matheusdmd.github.io/AWS-Automate-Kubernetes-Deploying/"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
 		</div>
 
-
-		<div class="slide" id="MM" data-anchor="slide4">
-			<h1>Mundo Maker</h1>
+		<div class="slide" id="slide4" data-anchor="MIPS">
+			<h1>MIPS Processor</h1>
+			<p style="color:white">My own little Microprocessor without Interlocked Pipeline Stages</p>
+			<br>
 			<p>
-			Experiência com ensino e monitoria de computação, programação e eletrônica aliadas às práticas Makers treinando futuras gerações de engenheiros, jovens de 7 a 15 anos. 
+				During the computer design discipline at Insper, we had to design a MIPS processor that would execute a fragment of the full original instruction set. Evolving from a version of the Single-Cycle MIPS processor, in a group of 2 students we developed a Pipeline ready processor using VHDL programming.
 			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/solution_diagram_mips.jpeg">
+						<img src="images/solution_diagram_mips.jpeg" alt="Solution Diagram" width="300" height="200">
+						</a>
+						<div class="desc">Solution Diagram</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://matheusdmd.github.io/MIPS/"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
 		</div>
 
-	    <div class="slide" id="hackathon" data-anchor="slide5">
-	    	<h1>Hackathon Insper</h1>
-	    	<img src="images/hackathon.jpg" alt="Hackathon">
-	    	<a href="HackathonApp/principal.html"><p>Projeto</p></a>
+		<div class="slide" id="slide5" data-anchor="Amazonia">
+			<h1>Amazônia</h1>
+			<p style="color:white">The marketplace for native brazilian crafts, art and much more</p>
+			<br>
+			<p>
+				In order to keep this population connected to its original culture and provide a source of funds to their communities and tribes we created “amazônia”. As a paronomasia to the online marketplace amazon, we created a marketplace destined to sell products, crafts and artworks from these brazilian tribes. Bringing them the necessary income to better integrate in modern society while keeping its roots to traditional crafting and art. The platform also focus on spreading the culture and raise awareness of the indian causes, conflicts regarding land and segregation helping connect both modern society and indian populations.
+			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/logo.png">
+						<img src="images/logo.png" alt="Logo" width="300" height="200">
+						</a>
+						<div class="desc">Pun Logo</div>
+					</div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/algorithm.png">
+						<img src="images/algorithm.png" alt="algorithm" width="300" height="200">
+						</a>
+						<div class="desc">Recomendation Algorithm</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://matheusdmd.github.io/IndianCulture/"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
+		</div>
+
+		<div class="slide" id="slide6" data-anchor="ScaryVR">
+			<h1>ScaryVR</h1>
+			<p style="color:white">A Virtual Reality thriller that makes 3 rooms and 5 minutes seem like forever</p>
+			<br>
+			<p>
+				You are lost in a small room, old, dark… silent. It reminds you of a real place, it has furniture and the size gives you claustrophobic feelings. You have to get out. But the sounds in your surrounding won't encourage you to even cross the first door. When you reach for the key on top of the old desk… Scared yet? This kind of experience made me interested in further developing the project and getting a deeper understanding of the technology of Virtual Reality. In a team of 2 students, we developed a 5 minute experience for the annual Insper Expo. The goal was to make a immersive experience that would really make you go into a different world, without leaving the room. We achieved that, by creating fun and realistic interactions in a 3 room, free-walking experience, meaning that the metrics weren't only virtual, but they matched the real ones. We developed it using Unity-3D and specifically for the Vive VR HMD.
+			</p>
+			<div>
+					<!-- <div class="gallery" style="float:left">
+						<a target="_blank" href="images/testing.png">
+						<img src="images/testing.png" alt="Logo" width="300" height="200">
+						</a>
+						<div class="desc">Me - Testing the VR setup</div>
+					</div> -->
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/setup.png">
+						<img src="images/setup.png" alt="algorithm" width="300" height="200">
+						</a>
+						<div class="desc">Room Setup</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://github.com/MatheusDMD/Scary_VR"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
+		</div>
+
+		<div class="slide" id="slide9" data-anchor="Sky-TV">
+			<h1>Sky-TV (Consulting) - Android app</h1>
+			<p style="color:white">The 21st century TV-Technitian</p>
+			<br>
+			<p>
+				Together with SKY-TV, recently bought by AT&T, I have worked at their innovation center to develop a solution to improve TV-technicians efficiency. I was part of developing a feature of their existing app, which was a system where the user could reach technicians and get help as soon as they had an issue. Along with the technical solution application, we developed a simple step-by-step guide to identify and solve the most common problems, reducing cost in one of TVs operators most expensive area. We also created a system, where each technician could go to a moving storage unit to refill and quicker be on their way to the next client in need. During this 4 months consulting program, we were able to deliver a disruptive way to reduce cost and add value to end-users.
+			</p>
+			<div>
+					<div class="gallery" style="float:left;width: 100px;" >
+						<a target="_blank" href="images/Technitian.png">
+						<img src="images/Technitian.png" alt="Technitian" width="300" height="200">
+						</a>
+						<div class="desc">Calling Technician</div>
+					</div>
+					<div class="gallery" style="float:left;width: 100px;">
+						<a target="_blank" href="images/Technitian2.png">
+						<img src="images/Technitian2.png" alt="Technitian" width="300" height="200">
+						</a>
+						<div class="desc">Confirmation call</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="slide" id="slide10" data-anchor="Neato">
+			<h1>Neato Hacked - Android app</h1>
+			<p style="color:white">A vaccum cleaner robot hacked into a self-driving vehicle</p>
+			<br>
+			<p>
+				My team and I developed Neato (a hacked vacuum cleaner robot) using a ROS (Robot Operating System) tools. From Computer Vision applications we used OpenCV to visually guide the robot around and used a Particle Filter to control the robot's movement based on statistical positioning on a predefined map. I ended up working with many robot related projects later on, and I am currently a Student Assistant for Insper's Robotics discipline.
+			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="https://www.youtube.com/watch?v=SXcCJ9x26ZQ&list=PLDgoVh-D41jNxsHwHLEFgfRmsjzRr4sAL">
+						<img src="images/neato.png" alt="Technitian" width="300" height="200">
+						</a>
+						<div class="desc">Neato Hackings youtube playlist</div>
+					</div>
+			</div>
+			<br>
+			<a target="_blank" href="https://github.com/MatheusDMD/Robotics"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
+		</div>
+
+		<div class="slide" id="slide10" data-anchor="Morse">
+			<h1>Morse - Android app</h1>
+			<p style="color:white">Designing a communication tool for special needs</p>
+			<br>
+			<p>
+				Morse is my first native android app, and is a free morse-code message application available in the play-store (Android) This solution was developed with a specific man in mind, a veteran with limited mobility, due to a war. With limited speech, he decided to use morse to communicate. The interface was designed based on his possibilities and limitations in mind, with features enabling nurses and family to communicate together with the man.
+			</p>
+			<br>
+			<a target="_blank" href="https://play.google.com/store/apps/details?id=agile.app.morsecodeapp"><button type="button" class="btn btn-outline-primary">View project on PlayStore</button></a>
+			<br>
+			<br>
+			<a target="_blank" href="https://github.com/MatheusDMD/MorseCodeApp"><button type="button" class="btn btn-outline-primary">View project page on <img src="images/github.png" alt="GitHub" style="width:2em;height:2em;border:0;align:left"></img> GitHub</button></a>
+		</div>
+		
+		<div class="slide" id="slide7" data-anchor="Endor">
+			<h1>Endor - Android app</h1>
+			<p style="color:white">Share your passion</p>
+			<br>
+			<p>
+				With the help of Collaborative Development and using Scrum framework, with a self-managed team, we created a high-fidelity MVP Android App: Endor. It is a social network that connects athletes, enabling them to share experiences within sport. Back in the beginning of the Sport connectivity trend, this platform gave users the ability to challenge friends in multiple sports, and have the user a feeling of achievement. This social network app started out as a school project and developed into a start-up, where I had the role of head of technology.
+			</p>
+			<div>
+				<div class="gallery" style="float:left;width: 100px;">
+						<a target="_blank" href="images/endor.png">
+						<img src="images/endor.png" alt="screenshot" width="300" height="200">
+						</a>
+						<div class="desc">Screenshot</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="slide" id="slide8" data-anchor="MotorcyclistSafety">
+			<h1>Bora? (Motorcyclist Safety) - Android app</h1>
+			<p style="color:white">Monitoring system that will prevent accidents</p>
+			<br>
+			<p>
+				Working with Agile Development, we created a solution for the growing problem of Motorcycle accidents in Brazil. I developed a hardware that through an Android Application could analyze the Motorcyclist driving behavior, give feedback and warnings to avoid accidents while also provide content with best riding practices. A partnership with the state government sponsored the project and allowed us to start first field tests.
+			</p>
 		</div>
 
 	</div>
 
 	<div class="section" id="section2">
-		<h1>Insper</h1>
-		<p>
-			Ser da primeira turma de um curso de engenharia como o do Insper é uma experiência incrível!
-			O projeto Engenharia Insper, foi inspirado nos cursos do Olin College, uma universidade que, assim como o Insper, quebra com paradigmas tradicionais de outros cursos. Essa parceria nos trouxe base e apoio internacional que comprovam a eficácia dos métodos aplicados no curso.
-			Somos parte da instituição, parte da criação de algo maior do que nossos 5 anos de curso.
-			Inspirar não somente nosso alunos, mas pessoas, universidades.
-		</p>
+
+		<div class="slide" id="slide1" data-anchor="Awards">
+			<h1>Awards and Recognition</h1>
+			<p>
+				Competitions, nominations and accomplishments
+			</p>
+			<a style="float:left;margin:5px" href="#awards/Brandstorm"><button type="button" class="btn btn-outline-primary">L'Oréal Brandstorm Challenge 2017</button></a>
+			<a style="float:left;margin:5px" href="#awards/IXL"><button type="button" class="btn btn-outline-primary">IXL - Innovation Olympics [Fall 2016]</button></a>
+			<a style="float:left;margin:5px" href="#awards/InsperHackathon"><button type="button" class="btn btn-outline-primary">Insper Hackathon [Spring 2016]</button></a>
+			<a style="float:left;margin:5px" href="#awards/InsperAwards"><button type="button" class="btn btn-outline-primary">Insper Awards for Leadership</button></a>
+		</div>
+
+		<div class="slide" id="slide90" data-anchor="Brandstorm">
+			<h1>L'Oréal Brandstorm Challenge 2017</h1>	  
+			<p>
+				In July 2017, I flew to Paris to participate the world finals of a global challenge: L’Oréal Brandstorm 2017. With more than 25k participants from all over the world participating. We won the TechAward, with a product-service system that brought personalised grooming in a sustainable and connected way to millennial users.
+			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="https://www.youtube.com/watch?v=JqBA9zqiMDM&feature=youtu.be&t=47m13s">
+						<img src="images/loreal.jpg" alt="Presentation" width="300" height="200">
+						</a>
+						<div class="desc">Watch the Final Presentation in Paris</div>
+					</div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/loreal5.png">
+						<img src="images/loreal5.png" alt="Product" width="300" height="200">
+						</a>loreal
+						<div class="desc">Final Product Design</div>
+					</div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/loreal3.jpg">
+						<img src="images/loreal3.jpg" alt="Celebration" width="300" height="200">
+						</a>
+						<div class="desc">Tech Award Winners!</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="IXL">
+			<h1>IXL - Innovation Olympics [Fall 2016]</h1>
+			<p>
+				During Fall 2016, I joined the IXL - Innovation Olympics held in Boston. This global competition groups 5 top schools to compete and solve a business case focusing of the companies challenges. Our case company was CMI, the biggest company in Guatemala, to create solutions on food for the Guatemalan base of the pyramid population. To better understand their problems, we visited Brazilian Favelas and talked to people that struggled with food access. We aimed to reduce the cost of livestock production and its sales as a consequence. Given the low access to food in the base of the pyramid due to low income, making food more accessible to anyone in the country. Our goal was to find a way of eradicating famine in Guatemala while at the same time build a profitable solution for the company. We developed a business plan that used insects as source of protein to feed livestock. With it, we were able to reduce production cost in the long term and won the first prize, bringing new insights to CMI.
+			</p>
+			<div class="gallery" style="float:left">
+				<a target="_blank" href="images/ixl.jpg">
+				<img src="images/ixl.jpg" alt="algorithm" width="300" height="200">
+				</a>
+				<div class="desc">IXL Fall 2016 Team</div>
+			</div>
+		</div>
+
+		<div class="slide" id="slide4" data-anchor="InsperHackathon">
+			<h1>Insper Hackathon [Spring 2016]</h1>
+			<p>
+				In the first edition of the annual Insper Hackathon we were challenged to create a solution that would improve quality of life (QOL) in Brazil. With such a broad topic our goal was to tackle something that would actually add value to people with low QOL. Our understanding was that the impact would greater if we targeted people with low QOL, rather than otherwise. We developed a platform for financial consulting, with educational strategy to better manage the finance and register expenses in a easy way. With the new knowledge from the education section, the platform give users a better overview of their finance, starting the motivation to make a change, rather than just coming with "advice from experts". With this platform we won Insper's 1st hackathon, and inspired a similar platform from the government tax institution to help the population in debt solve their struggles.
+			</p>
+			<div>
+					<div class="gallery" style="float:left">
+						<a target="_blank" href="images/hackathon.jpg">
+						<img src="images/hackathon.jpg" alt="Presentation" width="300" height="200">
+						</a>
+						<div class="desc">Winning Celbration</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="slide" id="slide5" data-anchor="InsperAwards">
+			<h1>Insper Awards for Leadership</h1>
+			<p>
+				Three times, I’ve been awarded the Leadership and impact award, where faculty and students nominate students who contribute to the school. I am the first engineering ever to receive the Insper Award, from my contribution to Insper’s administration by representing both my class and the whole engineering student body.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="slide" id="slide1" data-anchor="StudentLife">
+			<h1>Student Life</h1>
+			<p>
+				What my student life looks like!
+			</p>
+			<a style="float:left;margin:5px;color:rgb(194, 7, 7)" href="#student/Insper"><button type="button" class="btn btn-outline-primary">Insper - Computer Engineering</button></a>
+			<a style="float:left;margin:5px;color:rgb(61, 139, 255)" href="#student/Columbia"><button type="button" class="btn btn-outline-primary">Columbia University - Exchange Semester</button></a>
+		</div>
+
+		<div class="slide" id="slide2" data-anchor="Insper">
+			<h1>Insper - Computer Engineering</h1>
+			<p>
+				As the first class to ever graduate the Computer Engineering program at Insper I feel a huge responsibility on not only helping set the culture for the courses and student life, but also creating a solid image of a the school. I've been working hard to achieve that, being active as a student and working hard to show our potential outside. By working on interesting companies and projects and joining global competitions to prove that I can go further and challenge myself.
+			</p>
+			<a target="_blank" style="float:left;margin:5px;color:rgb(194, 7, 7)" href="http://insper.edu.br/en"><button type="button" class="btn btn-outline-primary">Insper</button></a>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="Columbia">
+			<h1>Columbia University - Exchange Semester</h1>
+			<p>
+				During my exchange semester (2017.1) at Columbia University I'll be taking disciplines in Leadership and Management as well as masters level Computer Science disciplines in the Machine Learning/AI fields.					
+				More adventures coming soon!
+			</p>
+			<a target="_blank" style="float:left;margin:5px;color:rgb(61, 139, 255)" href="http://www.columbia.edu/"><button type="button" class="btn btn-outline-primary">Columbia University</button></a>
+		</div>
+
 	</div>
 </div>
 

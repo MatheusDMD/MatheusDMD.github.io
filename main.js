@@ -20,8 +20,8 @@ $(document).ready(function () {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', '3rdPage'],
-    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#1BBC9B'],
     css3: true
   });
 });
