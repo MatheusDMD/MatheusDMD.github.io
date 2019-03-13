@@ -6,7 +6,7 @@ function roda() {
     if(numero == 11) {
         numero = 1;
     }
-    document.querySelector(".imagem").src = "http://www.lorempixel.com/320/240/sports/" + numero;
+    document.querySelector(".imagem").src = "https://www.lorempixel.com/320/240/sports/" + numero;
 }
 
 function mudaTexto() {

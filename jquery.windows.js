@@ -2,7 +2,7 @@
  * windows: a handy, loosely-coupled jQuery plugin for full-screen scrolling windows.
  * Version: 0.0.1
  * Original author: @nick-jonas
- * Website: http://www.workofjonas.com
+ * Website: https://www.workofjonas.com
  * Licensed under the MIT license
  */
 

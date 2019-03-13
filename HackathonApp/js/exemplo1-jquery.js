@@ -5,7 +5,7 @@ function roda() {
     if(numero == 11) {
         numero = 1;
     }
-    $(".imagem").attr("src", "http://www.lorempixel.com/320/240/sports/" + numero);
+    $(".imagem").attr("src", "https://www.lorempixel.com/320/240/sports/" + numero);
 }
 
 setInterval(roda, 5000);
